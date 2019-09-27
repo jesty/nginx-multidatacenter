@@ -1,0 +1,42 @@
+version: '3'
+services:
+
+  loadbalancer:
+    image: nginx:latest
+    container_name: loadbalancer_nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - 9090:80
+
+  backendOne:
+    image: nginx:latest
+    container_name: backendOne_nginx
+    volumes:
+      - ./htmlOne:/usr/share/nginx/html
+    ports:
+      - 8081:80
+
+  backendOneBackup:
+    image: nginx:latest
+    container_name: backendOneBackup_nginx
+    volumes:
+      - ./htmlOneBackup:/usr/share/nginx/html
+    ports:
+      - 8082:80
+
+  backendTwo:
+    image: nginx:latest
+    container_name: backendTwo_nginx
+    volumes:
+      - ./htmlTwo:/usr/share/nginx/html
+    ports:
+      - 8083:80
+
+  backendTwoBackup:
+    image: nginx:latest
+    container_name: backendTwoBackup_nginx
+    volumes:
+      - ./htmlTwoBackup:/usr/share/nginx/html
+    ports:
+      - 8084:80
