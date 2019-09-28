@@ -26,7 +26,7 @@ Then try to contact using the header "X-SERVER-SELECT" with value "two":
 
 The result will be: "Test TWO".
 
-Now try to stop the main server that refers to the backend "ONE"
+Now try to stop the main server that refers to the backend "TWO"
 
 	$ docker stop backendTwo
 
