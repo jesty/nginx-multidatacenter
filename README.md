@@ -1,4 +1,4 @@
-# Nginx passive/active in a multi-datacenter/geo-replicated scenario.
+# Nginx active/passive in a multi-datacenter/geo-replicated scenario.
 
 The demo provides an Nginx setup to serve a passive/active service in a multi-datacenter/geo-replicated scenario.
 
