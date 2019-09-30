@@ -1,5 +1,7 @@
 # Nginx active/passive in a multi-datacenter/geo-replicated scenario.
 
+More details about the demo can be found on my Medium blog: https://medium.com/@davidecerbo/deploy-a-multi-datacenter-web-application-with-an-active-passive-setup-e95ca1270e22
+
 The demo provides an Nginx setup to serve a passive/active service in a multi-datacenter/geo-replicated scenario.
 
 Using this simple setup we can route our clients to the closest datacenter, depending on their location, and if a data center, or a
