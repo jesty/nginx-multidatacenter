@@ -9,25 +9,25 @@ services:
     ports:
       - 9090:80
 
-  backendOne:
+  backendOneHost:
     image: nginx:latest
     container_name: backendOne_nginx
     volumes:
       - ./htmlOne:/usr/share/nginx/html
 
-  backendOneBackup:
+  backendOneBackupHost:
     image: nginx:latest
     container_name: backendOneBackup_nginx
     volumes:
       - ./htmlOneBackup:/usr/share/nginx/html
 
-  backendTwo:
+  backendTwoHost:
     image: nginx:latest
     container_name: backendTwo_nginx
     volumes:
       - ./htmlTwo:/usr/share/nginx/html
 
-  backendTwoBackup:
+  backendTwoBackupHost:
     image: nginx:latest
     container_name: backendTwoBackup_nginx
     volumes:
